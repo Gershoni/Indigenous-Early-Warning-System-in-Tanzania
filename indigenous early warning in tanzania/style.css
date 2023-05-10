@@ -1,0 +1,337 @@
+
+body {
+
+  display: block;
+  background-color: rgb(42, 124, 151);
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+  height:100%;
+
+}
+form{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+form input, form textarea, form button{
+  padding: 15px;
+  margin-bottom:18px;
+  outline:none;
+  border:none;
+  color: aqua;
+}
+form button{
+  background-color: bisque;
+  cursor: pointer;
+  color: aqua;
+}
+.sidenav {
+ height: 100%;
+ width: 0;
+ position: fixed;
+ background-color: #111;
+ overflow-x: hidden;
+ transition: 0.5s;
+ padding-top: 60px;
+}
+
+.sidenav a {
+ padding: 8px 8px 8px 32px;
+ text-decoration: none;
+ font-size: 25px;
+ display: block;
+ color: white;
+ transition: 0.3s;
+}
+
+.sidenav a:hover {
+ color: silver;
+}
+
+.sidenav .closebtn {
+ position: absolute;
+ top: 0;
+ right: 25px;
+ font-size: 36px;
+ margin-left: 50px;
+ cursor: pointer;
+}
+
+.main{
+  border: 0.01px solid rgb(77, 74, 73);
+  background-color: lightblue;
+  padding-top:auto;
+  padding-bottom: auto;
+  padding-right: 75px;
+  margin-right: 60px;
+  padding-left: 100px;
+  margin-left: 150px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.chanzo{
+  border:1px solid #111 ;
+  padding-left: auto;
+  padding-bottom: auto;
+  padding-right: auto;
+  padding-top: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.page{
+  float: right;
+}
+.chini{
+  float: right;
+  text-align: right;
+}
+
+.mkia{
+  border: 0.01px solid black;
+  color: cornsilk;
+  background-color: dimgray;
+
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.log{
+  border: 0px solid none;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 2px;
+}
+
+
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+ul{
+  list-style-type:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+
+.log{
+    font-size: 2em;
+    color: rgb(194, 54, 54);
+    user-select: none;
+
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(248, 246, 246);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+    
+}
+.navigation a::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: rgb(235, 230, 230);
+    border-radius: 5px;
+    transform-origin:right;
+    transform: scaleX(0);
+    transition: transform .5s;
+
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navigation .btn {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(129, 54, 54);
+    font-weight: 500;
+    margin-left: 40px;
+    transition: -5s;
+
+}
+.navigation .btn:hover{
+    background: rgb(156, 49, 49);
+    color: #0d72be;
+
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: silver;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+*/
+

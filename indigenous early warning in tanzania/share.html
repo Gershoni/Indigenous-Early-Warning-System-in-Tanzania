@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a  class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="./index.html">Home</a>
+
+            <a href="./faida.html">Tanzania Natural Disaster Profile </a>
+            <a href="./onyo.html"> Indigenous early warning background</a>
+            <a href="./indicator.html">Indigenous early warning indicators in Tanzania.</a>
+            <a href="#">System of information sharing</a>
+            <a href="./manage.html">Indigenous knowledge used to manage disasters</a>
+</div>
+<h1 style="text-align: center;" id="top">IK-DAT (Indigenous Knowledge Data base) </h1><br>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;menu</menu></span>
+
+<div class="main">
+    <h3>System of information sharing</h3>
+    
+    <p><b>Various scenario entail as to why we need warnings. These may be but not limited to the following;</b></p>
+     <ul>
+        <li>To achieve safety, warnings have been part of our daily life.</li>
+        <li>We live because we need security of our life, as well as our assurance
+            of reaching development. In such a view, we need timely and accurate warnings daily.</li>
+         <li>To enhance preparedness in all settings (physical, social, economic, psychological
+            , biological, technological, etc.).</li>
+         <li>To reduce loss of lives.</li>
+         <li>To reduce injuries.</li>
+         <li>To reduce costs of response and recovery measures, etc.</li>
+     </ul>
+    <img src="./pics/1.jpg" alt="" style="height: 800px;width: 650px;">
+    <p>Therefore, Various tools can be used for communication & dissemination of EW information. 
+        having the potential to benefit end users and save lives.
+        </p>
+      <ul>
+        <li>Street lauding (Sukuma, zinza, kurya, zanaki, sumbwa, massai, Kaguru,
+             Sagala and Vidunda. Once flood or drought happens people or society get
+              information through street lauding that is made by special people chosen in the community
+               to raise awareness of people and to share information about the occurrence of either flood or drought. </li>
+        <li>Meetings (used by sukuma, zinza,kurya, zanaki, sumbwa, massai Kaguru, Sagala and
+             Vidunda Blowing traditional trumpets (cow horns) and whistles (used by Sukuma and massai community). 
+             After the early signs show that something bad (i.e. flood and drought) will happen people gather at a
+              big tree and have a meeting to discuss and share information to people of what has been foreseen so as
+               to enhance coping strategies and response measures against disasters.</li>
+        <li>Drums, bells (used by Sukuma,sumbwa and zinza tribes).also in other community they use 
+            to beat drums and ring bell so as to share information to people about what is going to happen in
+             order to enhance response measures such as food security, coping mechanisms and others.</li>
+    </ul>  
+    <li>Street lauding (Sukuma, zinza, kurya, zanaki, sumbwa, massai, Kaguru, Sagala and Vidunda.</li><br>
+    <li>Meetings (used by sukuma, zinza,kurya, zanaki, sumbwa, massai Kaguru, Sagala and Vidunda Blowing 
+        traditional trumpets (cow horns) and whistles (used by Sukuma and massai community)</li><br>
+    <li>Drums, bells (used by Sukuma,sumbwa and zinza tribes).</li>
+    <a href="#top" style="float: right;border: 2px solid rgb(97, 19, 241);padding: 20px; border-radius: 50px 50px;"><i class="fa-regular fa-up fa-beat ">Up</i></a>
+    <br><br><br><br><br><br><br>
+  </div>
+
+</div>
+<div class="chini">
+  <p>Click on link below to download <i class="fa-light fa-hand-back-point-down"></i></p>
+  <a href="./document/full.pdf" target="_blank" download=""><button>Full document  <i class="fa-sharp fa-light fa-arrow-down-to-line fa-flip" style="color: #153a7a;"></i></button></a>
+  </div> 
+  <div style="float: right;">
+    <form class="contact_form" action="#" style="place-items:right;">
+      <input class="name" type="text" placeholder="Name" />
+      <input class="email" type="email" placeholder="Email" />
+      <textarea class="msg" name="" id="" cols="30" rows="5" placeholder="Enter your comment....."></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>   
+  <div class="mkia" >
+    <h3>Contact us:</h3>
+    <ul style="list-style-type:none;">
+        <li><a href="#" class="log" target="_blank"><i class="fa-brands fa-whatsapp">+25562214380</i></a></li><br>
+        <li><a href="https://www.facebock.com"  target="_blank"><i class="fa-brands fa-facebook fa-bounce">Mussa Gershoni</i></a></li><br>
+        <li><a href="https://www.twitter.com" class="log" target="_blank"><i class="fa-brands fa-twitter">@GershoniM21</i></a></li><br>
+        <li><a href="https://www.instagram.com" class="log" target="_blank"><i class="fa-brands fa-instagram">Gershoni Mussa</i></a></li><br>
+        <li><a href="#" class="log" target="_blank">gullehabasa7@gmail.com</a></li><br>
+       
+    </ul>
+   
+    <h3 style="text-align: center;">Developed and Maintained by Gershoni Mussa</h3>
+    <h4>Disaster Risk Manager Graduate from University Of Dodoma (UDOM) Tanzania</h4>
+ 
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+  const form =document.querySelector('.contact_form');
+  //function to send the message when click on button send
+  function sendMsg(e){
+    e.preventDefault();
+    
+          const name =document.querySelector('.name'),
+                email =document.querySelector('.email'),
+                msg =document.querySelector('.msg');
+         
+       //function send email....
+     Email.send({
+      SecureToken : "96fd61b0-c240-40f9-b325-4afc9ba0a247",
+       To: 'gullehabasa7@gmail.com',
+       From: email.value,
+       Subject:"Contact Form",
+       Body:msg.value
+     }).then(
+      message =>alert(message)
+     );       
+  }
+       //add the event listener submit
+       form.addEventListener('submit', sendMsg);
+</script>
+  </body>
+</html> 
+</body>
+</html> 

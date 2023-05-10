@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a  class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="./index.html">Home</a>
+
+            <a href="./faida.html">Tanzania Natural Disaster Profile </a>
+            <a href="./onyo.html"> Indigenous early warning background</a>
+            <a href="./indicator.html">Indigenous early warning indicators in Tanzania.</a>
+            <a href="./share.html">System of information sharing</a>
+            <a href="#">Indigenous knowledge used to manage disasters</a>
+</div>
+<h1 style="text-align: center;">IK-DAT (Indigenous Knowledge Data base) </h1><br>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;menu</menu></span>
+
+<div class="main">
+    <h3>System of information sharing</h3>
+    <p>There is various indigenous knowledge which used by the local people to manage and control floods and droughts.
+         These measures are used as a substitute of modern tools like boats for evacuating people during floods from precarious 
+         to safer places. In practice, the effectiveness of these techniques depended on the flexibility and fastness of the people.</p>
+         <p>Gender, age, and body fitness of a person are among the key factors for effective running, swimming, and 
+            climbing trees and roofs of the houses. Furthermore, it is depicted that men are flexible and fast to run, 
+            swim and climb trees and roofs of the houses compared to women, especially those who are under maternity. In 
+            addition, it is revealed that women are often restricted from running fast by their clothing, their role as 
+            caretakers of children and older people as well as cultural rules restrict them from leaving their homes without 
+            the accompaniment of a male relative. Nonetheless, children and elders are perceived to be lagging behind to run, 
+            swim, and climb trees and roofs of the houses due to age and body fitness factors.</p>
+      <p>Also, people are planting indigenous vegetation to curb the intensity of floods and people are using traditional trumpets 
+        (cow horns) and whistles to liaise information about flood incidents. Where by once people hear sirens from cow horns and
+         whistles they become sentient to run away from precarious places to safe places. furthermore, ascertain that there are 
+         specific voices from those traditional tools which distinguish the occurrence of floods and other menaces. Local people
+          views on the use of local instruments to communicate information about flood concurs that traditional media and tools are
+           instrumental in addressing disasters insofar as they are easily affordable and accessible in liaising disaster warnings
+            and information.   </p>
+            <img src="./pics/2.jpg" alt=""style="height: 800px;width: 650px;">
+
+    <ul >
+        <li><i class="fa-solid fa-arrow-right"></i> Swimming</li><br>
+        <li><i class="fa-solid fa-arrow-right"></i>  Climbing trees/roofs</li><br>
+        <li><i class="fa-solid fa-arrow-right"></i>   Crying</li><br>
+         <li><i class="fa-solid fa-arrow-right"></i>  Running</li><br>
+        <li><i class="fa-solid fa-arrow-right"></i>    Hiding in/on safer places</li><br>
+        <li><i class="fa-solid fa-arrow-right"></i>   Storing food, water</li><br>
+        <li><i class="fa-solid fa-arrow-right"></i>    Planting of native vegetation (reeds and bamboos)</li><br>
+        <li><i class="fa-solid fa-arrow-right"></i>    Construction of embankment</li><br>
+        <li><i class="fa-solid fa-arrow-right"></i>    Contouring and terracing </li>
+    </ul>  
+  </div>
+</div>
+<div class="chini">
+  <p>Click on link below to download <i class="fa-light fa-hand-back-point-down"></i></p>
+  <a href="./document/full.pdf" target="_blank" download=""><button>Full document  <i class="fa-sharp fa-light fa-arrow-down-to-line fa-flip" style="color: #153a7a;"></i></button></a>
+  </div> 
+  <div style="float: right;">
+    <form class="contact_form" action="#" style="place-items:right;">
+      <input class="name" type="text" placeholder="Name" />
+      <input class="email" type="email" placeholder="Email" />
+      <textarea class="msg" name="" id="" cols="30" rows="5" placeholder="Enter your comment....."></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>   
+  <div class="mkia" >
+    <h3>Contact us:</h3>
+    <ul style="list-style-type:none;">
+        <li><a href="#" class="log" target="_blank"><i class="fa-brands fa-whatsapp">+25562214380</i></a></li><br>
+        <li><a href="https://www.facebock.com"  target="_blank"><i class="fa-brands fa-facebook fa-bounce">Mussa Gershoni</i></a></li><br>
+        <li><a href="https://www.twitter.com" class="log" target="_blank"><i class="fa-brands fa-twitter">@GershoniM21</i></a></li><br>
+        <li><a href="https://www.instagram.com" class="log" target="_blank"><i class="fa-brands fa-instagram">Gershoni Mussa</i></a></li><br>
+        <li><a href="#" class="log" target="_blank">gullehabasa7@gmail.com</a></li><br>
+       
+    </ul>
+   
+    <h3 style="text-align: center;">Developed and Maintained by Gershoni Mussa</h3>
+    <h4>Disaster Risk Manager Graduate from University Of Dodoma (UDOM) Tanzania</h4>
+ 
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+  const form =document.querySelector('.contact_form');
+  //function to send the message when click on button send
+  function sendMsg(e){
+    e.preventDefault();
+    
+          const name =document.querySelector('.name'),
+                email =document.querySelector('.email'),
+                msg =document.querySelector('.msg');
+         
+       //function send email....
+     Email.send({
+      SecureToken : "96fd61b0-c240-40f9-b325-4afc9ba0a247",
+       To: 'gullehabasa7@gmail.com',
+       From: email.value,
+       Subject:"Contact Form",
+       Body:msg.value
+     }).then(
+      message =>alert(message)
+     );       
+  }
+       //add the event listener submit
+       form.addEventListener('submit', sendMsg);
+</script>
+  </body>
+</html> 
+   
+</body>
+</html> 

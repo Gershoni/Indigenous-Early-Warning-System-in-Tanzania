@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a  class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="./index.html">Home</a>
+            <a href="./faida.html">Tanzania Natural Disaster Profile </a>
+            <a href="#">Indigenous early warning background</a>
+            <a href="./indicator.html">Indigenous early warning indicators in Tanzania.</a>
+            <a href="./share.html">System of information sharing</a>
+            <a href="./manage.html">Indigenous knowledge used to manage disasters</a>
+</div>
+<h1 style="text-align: center;">IK-DAT (Indigenous Knowledge Data base) </h1><br>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;menu</menu></span>
+<div class="main">
+  <div>
+    <h2>Indigenous early warning background</h2>
+    <p>
+     Devices which have been used in Early warning 
+     systems are diverse, and have also based on the
+      types of disasters. Some devices are multi-purpose
+       for use in several disasters, whilst some are used
+        per see for certain disasters. These devices
+         additionally, range from formal to informal
+          tools depending on location, users and type of
+           disasters. Therefore, Informal devices are 
+           natured from indigenous knowledge which have
+            been practiced by some societies to predict
+             and interpret some signs which to them 
+             foretell certain events
+    </p>
+     <p>
+       In records, the application of indigenous knowledge in disaster management has gained global recognition during 
+       the United Nations Conference on Environment and Development (UNCED) held in June 1992 in Rio de Janeiro 
+       (Coates, 2004; UNEP, 2008). In this conference, the Agenda 21 as one of the environmental agreements signed 
+       at UNCED in 1992 emphasizes that governments and intergovernmental organizations should respect, record,
+        and work toward incorporating indigenous knowledge systems into research and development programs for sustainable 
+        development and environmental conservation.  
+     </p>
+     <p>
+       Other International Summits, such as the 1980 “World Conservation Strategy” by the 
+       International Union for the Conservation of Nature (IUCN) and The World Conference on Science held in Budapest,
+        Hungary, from 29th June to 1st July in 1999 also paved a way for the recognition of indigenous knowledge in 
+        conservation and human development by recommending that scientific and traditional knowledge should be integrated 
+        particularly in the field of development and environmental conservation (UNEP, 2008).  
+ 
+     </p>
+     <p>
+       Local people have rich of indigenous knowledge to manage and control disasters such as floods. 
+       The indigenous knowledge provides local people with a variety of options and innovations to deal with the challenges of 
+       disaster like floods and drought in the course of making a living.
+     </p>
+     <p>
+       The local knowledge and skills are instrumental in predicting weather patterns and interpretations, enhance food security,
+        enhance coping mechanisms to thwart various disasters like floods in Tanzania, and are also decisive to heal disaster 
+        victims. Therefore, to strengthen them to be more effective to manage and control disasters, Indigenous Knowledge should 
+        be combined and integrated with culturally sensitive scientific knowledge that outfits the environment of the local
+         communities. This is significant in view of the fact that many disaster risk reduction strategies have failed due
+          to their inability to fit in with the local context. Similarly, local communities need to be empowered to recognize,
+           value, and appreciate the value of their knowledge that they possess, and how it could contribute to reducing disaster
+            risks.  
+     </p>
+     <a href="#top" style="float: right;border: 2px solid rgb(97, 19, 241);padding: 20px; border-radius: 50px 50px;"><i class="fa-regular fa-up fa-beat ">Up</i></a>
+     <br><br><br><br><br><br><br><br>
+ </div>
+
+</div>
+
+<div>
+  <h2>Click on link below to download this page </h2>
+  <a href="./document/Indigenous early warning background 2.pdf" target="_blank" download=""><button>Download</button></a>
+</div>  
+<div style="float: right;">
+  <form class="contact_form" action="#" style="place-items:right;">
+    <input class="name" type="text" placeholder="Name" />
+    <input class="email" type="email" placeholder="Email" />
+    <textarea class="msg" name="" id="" cols="30" rows="5" placeholder="Enter your comment....."></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div>
+<div class="mkia">
+  <h3>Contact us:</h3>
+  <ul style="list-style-type:none;">
+    <li><a href="#" class="log" target="_blank"><i class="fa-brands fa-whatsapp">+255744168183</i></a></li><br>
+    <li><a href="https://www.facebock.com"  target="_blank"><i class="fa-brands fa-facebook fa-bounce">Mussa Gershoni</i></a></li><br>
+    <li><a href="https://www.twitter.com" class="log" target="_blank"><i class="fa-brands fa-twitter">@GershoniM21</i></a></li><br>
+    <li><a href="https://www.instagram.com" class="log" target="_blank"><i class="fa-brands fa-instagram">Gershoni Mussa</i></a></li><br>
+    <li><a href="#" class="log" target="_blank">gellishonimussa7@gmail.com</a></li><br>
+   
+  </ul>
+  
+
+  </div>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+    const form =document.querySelector('.contact_form');
+    //function to send the message when click on button send
+    function sendMsg(e){
+      e.preventDefault();
+      
+            const name =document.querySelector('.name'),
+                  email =document.querySelector('.email'),
+                  msg =document.querySelector('.msg');
+           
+         //function send email....
+       Email.send({
+        SecureToken : "96fd61b0-c240-40f9-b325-4afc9ba0a247",
+         To: 'gullehabasa7@gmail.com',
+         From: email.value,
+         Subject:"Contact Form",
+         Body:msg.value
+       }).then(
+        message =>alert(message)
+       );       
+    }
+         //add the event listener submit
+         form.addEventListener('submit', sendMsg);
+  </script>
+
+
+   
+</body>
+</html> 
