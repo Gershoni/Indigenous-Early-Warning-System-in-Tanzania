@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a  class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+
+            <a href="./faida.html">Tanzania Natural Disaster Profile </a>
+            <a href="./onyo.html"> Indigenous early warning background</a>
+            <a href="./indicator.html">Indigenous early warning indicators in Tanzania.</a>
+            <a href="./share.html">System of information sharing</a>
+            <a href="./manage.html">Indigenous knowledge used to manage disasters</a>
+</div>
+<h1 style="text-align: center;" id="top">IK-DAT (Indigenous Knowledge Data base) </h1><br>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;menu</menu></span>
+<div class="main">
+  <h2> The National Early warning data base</h2>
+  <h3>Description </h3>
+  
+  <div>
+      <p> IK-DAT includes Informal devices natured from indigenous knowledge 
+          which have been practiced by some societies in Tanzania to predict 
+          and interpret some signs which to them foretell certain events at the
+           country level. Therefore, it provides an objective basis for understanding
+            and rational decision-making in disaster situations. For example, it helps
+             policymakers and disaster managers to identify what indigenous early warning 
+             signs are available within the communities, how these are shared within the 
+             community and if and how they are used in preparing for reducing the impacts of
+              disasters. In addition to providing information on the Indigenous early warning
+               indicators used in Tanzania, IK-DAT provides information on how local communities
+                need to be empowered to recognize, value, and appreciate the value of their 
+                knowledge that they possess, and how it could contribute to reducing 
+                disaster risks.  </p>
+      <p>
+           The IK-DAT data can be consulted through the database section of the website.
+            The database section is composed of five dynamic search tools 
+            (Tanzania Natural Disaster Profile, Indigenous early warning background,
+             Indigenous early warning indicators in Tanzania, System of information sharing
+              and Indigenous knowledge used to manage disasters). All the online generated 
+              informations are directly downloadable. However, access to the raw data is only
+               possible through a data request procedure. 
+      </p>
+      
+      <h3>Indigenous knowledge and early warning system in Tanzania</h3>
+      <img src="./pics/animal.png" alt="Warning">
+      
+      <a href="#top" style="float: right;border: 2px solid rgb(97, 19, 241);padding: 20px; border-radius: 50px 50px;"><i class="fa-regular fa-up fa-beat ">Up</i></a>
+      <br><br><br><br><br><br><br><br>
+
+
+    
+   </div>
+      
+
+</div>    
+<div class="chini">
+  <p>Click on link below to download <i class="fa-light fa-hand-back-point-down"></i></p>
+  <a href="./document/full.pdf" target="_blank" download=""><button>Full document  <i class="fa-sharp fa-light fa-arrow-down-to-line fa-flip" style="color: #153a7a;"></i></button></a>
+  </div> 
+  <div style="float: right;">
+    <form class="contact_form" action="#" style="place-items:right;">
+      <input class="name" type="text" placeholder="Name" />
+      <input class="email" type="email" placeholder="Email" />
+      <textarea class="msg" name="" id="" cols="30" rows="5" placeholder="Enter your comment....."></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>   
+  <div class="mkia" >
+    <h3>Contact us:</h3>
+    <ul style="list-style-type:none;">
+        <li><a href="https://wa.link/3j83z0" class="log" target="_blank"><i class="fa-brands fa-whatsapp">+25562214380</i></a></li><br>
+        <li><a href="https://www.facebook.com/profile.php?id=100091833578183"  target="_blank"><i class="fa-brands fa-facebook fa-bounce">Mussa Gershoni</i></a></li><br>
+        <li><a href="https://www.twitter.com" class="log" target="_blank"><i class="fa-brands fa-twitter">@GershoniM21</i></a></li><br>
+        <li><a href="https://www.instagram.com" class="log" target="_blank"><i class="fa-brands fa-instagram">Gershoni Mussa</i></a></li><br>
+        <li><a href="#" class="log" target="_blank">gullehabasa7@gmail.com</a></li><br>
+       
+    </ul>
+   
+    <h3 style="text-align: center;">Developed and Maintained by Gershoni Mussa</h3>
+    <h4>Disaster Risk Manager Graduate from University Of Dodoma (UDOM) Tanzania</h4>
+ 
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+  const form =document.querySelector('.contact_form');
+  //function to send the message when click on button send
+  function sendMsg(e){
+    e.preventDefault();
+    
+          const name =document.querySelector('.name'),
+                email =document.querySelector('.email'),
+                msg =document.querySelector('.msg');
+         
+       //function send email....
+     Email.send({
+      SecureToken : "96fd61b0-c240-40f9-b325-4afc9ba0a247",
+       To: 'gullehabasa7@gmail.com',
+       From: email.value,
+       Subject:"Contact Form",
+       Body:msg.value
+     }).then(
+      message =>alert(message)
+     );       
+  }
+       //add the event listener submit
+       form.addEventListener('submit', sendMsg);
+</script>
+  </body>
+</html> 
